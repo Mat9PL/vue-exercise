@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/userform',
+    path: '/form',
     component: userform,
   },
   {
@@ -15,7 +15,7 @@ const routes = [
     component: userform,
   },
   {
-    path: '/list',
+    path: '/data',
     component: list,
   }
 ]

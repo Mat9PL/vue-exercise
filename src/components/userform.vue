@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<router-link to="/list">See list of users</router-link>
-		<form @submit.prevent="addUser" to="/list">
+		<router-link to="/data">See list of users</router-link>
+		<form @submit.prevent="addUser" to="/data">
 			<input placeholder="Name" v-model="name"/>
       <input placeholder="Surname" v-model="surname"/>
       <input placeholder="Email" v-model="email"/>

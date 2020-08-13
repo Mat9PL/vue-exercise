@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<router-link to="/userform">Add another user</router-link>
+		<router-link to="/form">Add another user</router-link>
 		<h2>Users:</h2>
 		<div>
 			<div v-for="(user, index) in users" :key="index" class="user">
