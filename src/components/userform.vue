@@ -34,7 +34,7 @@ export default {
 			this.surname =''
 			this.email =''
 			this.phone =''
-
+			alert("new user added!!");
 		},
 		removeUser(id) {
 			store.commit('removeUser', id)
