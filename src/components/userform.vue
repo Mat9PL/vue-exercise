@@ -1,6 +1,7 @@
 <template>
 	<div>
-		<form @submit.prevent="addUser">
+		<router-link to="/list">See list of users</router-link>
+		<form @submit.prevent="addUser" to="/list">
 			<input placeholder="Name" v-model="name"/>
       <input placeholder="Surname" v-model="surname"/>
       <input placeholder="Email" v-model="email"/>
@@ -29,6 +30,11 @@ export default {
 				phone: this.phone,
 			}
 			store.commit('addUser', user)
+			this.name =''
+			this.surname =''
+			this.email =''
+			this.phone =''
+
 		},
 		removeUser(id) {
 			store.commit('removeUser', id)
@@ -46,6 +52,6 @@ export default {
     width: 500px;
     margin: auto;
     height: 200px;
-    border: 2px solid gray;
+    /* border: 2px solid gray; */
   }
 </style>

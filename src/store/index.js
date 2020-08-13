@@ -9,7 +9,7 @@ export default new Vuex.Store({
 	},
 	mutations: {
 		addUser(state, user) {
-			state.users.push({ user })
+			state.users.push(user)
 		},
 		removeUser(state, user) {
 			state.users.splice(state.users.indexOf(user), 1)

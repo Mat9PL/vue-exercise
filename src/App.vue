@@ -1,21 +1,13 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <userform/>
-    <list/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-  import userform from './components/userform.vue'
-  import list from './components/list.vue'
   export default {
     name: 'app',
-    components: {
-      userform,
-      list
-    },
   }
 </script>
 
